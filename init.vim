@@ -297,3 +297,4 @@ if (empty($TMUX))
 endif
 
 syntax on
+colorscheme onedark
