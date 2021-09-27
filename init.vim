@@ -14,6 +14,8 @@ Plug 'mfussenegger/nvim-jdtls'
 Plug 'sheerun/vim-polyglot'
 " Markdown
 Plug 'ellisonleao/glow.nvim'
+" File Tree Stuff
+Plug 'preservim/nerdtree'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -295,6 +297,8 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
+
+autocmd VimEnter * NERDTree | wincmd p
 
 syntax on
 colorscheme onedark
